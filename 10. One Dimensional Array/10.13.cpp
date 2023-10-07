@@ -41,11 +41,11 @@ int main()
 
     if(n%2==0)
     {
-        median = (a[n/2] + a[(n/2)+1])/2 ;
+        median = ((float)a[n/2] + a[(n/2)-1])/2 ;
     }
     else
     {
-        median = a[(n/2) + 1];
+        median = a[(n/2-1) + 1];
     }
     printf("\n\nmedian is %f: ", median);
 

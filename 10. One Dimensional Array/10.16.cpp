@@ -6,16 +6,29 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a[100], n;
-    printf("Enter the nth position of array: ");
-    scanf("%d", &n);
-    for(int i=0; i<n; i++)
+void d_to_b(int n){
+    if(n == 0)
     {
-        scanf("%d", &a[i]);
-        printf("%d ",a[i]);
+        printf("0");
+        return;
     }
 
+    int arr[32];
+    int i = 0;
+    while(n > 0){
+        arr[i++] = n % 2;
+        n = n / 2;
+    }
+    for(int j = i - 1; j >= 0; j--){
+        printf("%d ", arr[j]);
+    }
+}
+
+int main()
+{
+    int n;
+    printf("Enter the number: ");
+    scanf("%d", &n);
+    d_to_b(n);
     return 0;
 }

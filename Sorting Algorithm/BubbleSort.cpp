@@ -1,8 +1,3 @@
-/*
-    10.11. Write a program that read and sort an array using bubble sort in ascending order
-*/
-
-
 #include <iostream>
 using namespace std;
 
@@ -25,5 +20,4 @@ int main(){
     for (int i = 0; i < 6; i++){
         printf("%d ", arr[i]);
     }
-    return 0;
 }

@@ -8,6 +8,10 @@ using namespace std;
 
 int main()
 {
-    int a[100];
+    string a;
+    printf("Enter Your Name: ");
+    scanf("%s", &a);
+    printf("%c ", a);
     return 0;
+
 }

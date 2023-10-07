@@ -8,6 +8,8 @@ using namespace std;
 
 int main()
 {
-    int a[100];
+    char a[] = {"Hello"};
+    printf("%s", a);
+
     return 0;
 }

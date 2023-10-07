@@ -4,10 +4,15 @@
 
 
 #include <iostream>
+#include <string.h>
+#include <stdio.h>
 using namespace std;
 
 int main()
 {
-    int a[100];
+    char a[100];
+    printf("Enter the string: ");
+    scanf("%s", &a);
+    printf("Size of string: %s ", a);
     return 0;
 }

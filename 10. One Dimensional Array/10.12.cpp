@@ -6,16 +6,26 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a[100], n;
-    printf("Enter the nth position of array: ");
-    scanf("%d", &n);
-    for(int i=0; i<n; i++)
-    {
-        scanf("%d", &a[i]);
-        printf("%d ",a[i]);
+void BubbleSort(int arr[], int n){
+    for (int j = 0; j < n - 1; j++){
+        bool flag = false;
+        for (int i = 0; i < n-j-1; i++){
+            if(arr[i] > arr[i+1]){
+                swap(arr[i], arr[i+1]);
+                flag = true;
+            }
+        }
+        if(flag == false)
+            break;
     }
+}
+int main(){
+    int arr[] = {2, 6, 4, 1, 5, 3};
+    BubbleSort(arr, 6);
 
+    for (int i = 5; i >= 0 ; i--)
+    {
+        printf("%d ", arr[i]);
+    }
     return 0;
 }

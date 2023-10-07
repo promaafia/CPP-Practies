@@ -4,10 +4,16 @@
 
 
 #include <iostream>
+#include<string.h>
 using namespace std;
 
 int main()
 {
-    int a[100];
+    char a[100];
+    printf("Enter the string: ");
+    scanf("%s", &a);
+    strrev(a);
+    printf("Reverse string is %s \n", a);
+
     return 0;
 }

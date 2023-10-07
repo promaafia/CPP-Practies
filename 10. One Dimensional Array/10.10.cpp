@@ -25,7 +25,7 @@ int main()
             }
         }
     }
-    printf("\n\narray in ascending order: \n");
+    printf("\n\narray in decending order: \n");
 
     for(int i=0; i<n; i++)
     {
