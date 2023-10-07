@@ -8,14 +8,14 @@ using namespace std;
 
 int main()
 {
-    int m1[10][10], m2[10][10], r, c;
+    int m1[10][10], r, c;
 
     printf("Row: ");
     scanf("%d", &r);
     printf("Col: ");
     scanf("%d", &c);
 
-    printf("1st matrix elements: \n");
+    printf("matrix elements: \n");
     for (int i = 0; i < r; i++)
     {
         for (int j = 0; j < c; j++)
