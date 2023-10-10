@@ -5,15 +5,15 @@
 
 #include <iostream>
 #include<string.h>
+#include<algorithm>
 using namespace std;
 
 int main()
 {
-    char a[100];
-    printf("Enter the string: ");
-    scanf("%s", &a);
-    strrev(a);
-    printf("Reverse string is %s \n", a);
-
+    string s;
+    cout << "Enter string: ";
+    getline(cin, s);
+    reverse(s.begin(), s.end());
+    cout << "Reverse string: " << s << endl;
     return 0;
 }

@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    int m1[10][10], r, c;
+    int mat[10][10], r, c;
 
     printf("Row: ");
     scanf("%d", &r);
@@ -20,7 +20,7 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            scanf("%d ", &m1[i][j]);
+            scanf("%d", &mat[i][j]);
         }
     }
 
@@ -29,7 +29,7 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            printf("%d  ", m1[i][j]);
+            printf("%d ", mat[i][j]);
 
         }
         printf("\n");

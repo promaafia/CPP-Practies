@@ -20,7 +20,7 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            scanf("%d ", &m1[i][j]);
+            scanf("%d", &m1[i][j]);
         }
     }
     printf("2nd matrix elements:\n ");
@@ -28,7 +28,7 @@ int main()
     {
         for (int j = 0; j < c; j++)
         {
-            scanf("%d ", &m2[i][j]);
+            scanf("%d", &m2[i][j]);
         }
     }
     for (int i = 0; i < r; i++)

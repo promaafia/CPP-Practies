@@ -4,14 +4,17 @@
 
 
 #include <iostream>
+#include <string.h>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-    string a;
-    printf("Enter Your Name: ");
-    scanf("%s", &a);
-    printf("%c ", a);
-    return 0;
+    char name[100];
 
+    printf("Enter your name: ");
+    scanf(" %[^\n]s", name);
+    printf("Your Name is: %s", name.split());
+
+    return 0;
 }

@@ -5,14 +5,15 @@
 
 #include <iostream>
 #include <string.h>
-#include <stdio.h>
 using namespace std;
 
 int main()
 {
-    char a[100];
-    printf("Enter the string: ");
-    scanf("%s", &a);
-    printf("Size of string: %s ", a);
+    string s;
+    cout << "Enter string: ";
+    getline(cin, s);
+    int len = s.length();
+    cout << "\nstring length: " <<len<<endl;
+
     return 0;
 }

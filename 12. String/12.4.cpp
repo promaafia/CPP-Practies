@@ -4,10 +4,19 @@
 
 
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main()
 {
-    int a[100];
+    string s;
+    cout << "Enter string: ";
+    getline(cin, s);
+    for (int i = 0; i < s.length(); ++i)
+    {
+        s[i] = tolower(s[i]);
+    }
+    cout << "\nlowercase string: " <<s<<endl;
+
     return 0;
 }
