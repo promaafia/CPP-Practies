@@ -1,5 +1,5 @@
 /*
-    12.6. Write a program that read a line of text and display it in reverse order
+    12.5. Write a program that read a line of text and display it's length
 */
 
 
@@ -15,10 +15,7 @@ int main()
     for (int i = 0; str[i]; ++i){
         count++;
     }
-    //acout << "string length: " << count << endl;
+    cout << "\nstring length: " << count <<endl;
 
-    for (int i = count-1; i >= 0 ; --i){
-        cout << str[i];
-    }
     return 0;
 }

@@ -9,6 +9,46 @@ using namespace std;
 
 int main()
 {
-    int a[100];
+    char str[100];
+    int count, ucount, lcount, dcount, scount;
+    count = ucount = lcount = dcount = scount = 0;
+    cout << "Enter the string: ";
+    cin.getline(str, sizeof(str));
+
+    for (int i = 0; str[i]; ++i)
+    {
+        //total character
+        count++;
+
+        //lowerrcase count
+        if(str[i] >= 'a' && str[i] <= 'z')
+        {
+            lcount++;
+        }
+
+        //uppercase count
+        else if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            ucount++;
+        }
+
+        //digit
+        else if(str[i] >= '0' && str[i] <= '9')
+        {
+            dcount++;
+        }
+
+        //space count
+        else if(str[i] == ' ')
+        {
+            scount++;
+        }
+    }
+    cout << "\ntotal character: " << count <<endl << endl;
+    cout << "lowercase: " << lcount << endl << endl;
+    cout << "uppercase: " << ucount << endl << endl;
+    cout << "\ntotal digit: " << dcount <<endl;
+    cout << "\ntotal string space: " << scount <<endl;
+
     return 0;
 }

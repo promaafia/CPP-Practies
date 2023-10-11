@@ -9,14 +9,15 @@ using namespace std;
 
 int main()
 {
-    string s;
-    cout << "Enter string: ";
-    getline(cin, s);
-    for (int i = 0; i < s.length(); ++i)
-    {
-        s[i] = toupper(s[i]);
-    }
-    cout << "\nUppercase string: " <<s<<endl;
+    char str[100];
+    cout << "Enter the string: ";
 
+    cin.getline(str, sizeof(str));
+    for (int i = 0; str[i]; ++i){
+        if(str[i] >= 'a' && str[i] <= 'z'){
+            str[i] = str[i] - 32;
+        }
+    }
+    cout << "Uppercase string: " << str << endl;
     return 0;
 }

@@ -9,14 +9,16 @@ using namespace std;
 
 int main()
 {
-    string s;
-    cout << "Enter string: ";
-    getline(cin, s);
-    for (int i = 0; i < s.length(); ++i)
-    {
-        s[i] = tolower(s[i]);
-    }
-    cout << "\nlowercase string: " <<s<<endl;
+    char str[100];
+    cout << "Enter the string: ";
 
+    cin.getline(str, sizeof(str));
+    for (int i = 0; str[i]; ++i){
+        if(str[i] >= 'A' && str[i] <= 'Z'){
+            str[i] = str[i] + 32;
+        }
+    }
+    cout << "Lowercase string: " << str << endl;
     return 0;
 }
+

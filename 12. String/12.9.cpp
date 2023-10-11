@@ -8,6 +8,11 @@ using namespace std;
 
 int main()
 {
-    int a[100];
+    char name[100];
+    cout << "Enter string: ";
+    cin.getline(name, sizeof(name));
+    for (int i = 0; name[i]; ++i){
+        cout << name[i] << endl;
+    }
     return 0;
 }

@@ -1,5 +1,5 @@
 /*
-    12.5. Write a program that read a line of text and display it's length
+    12.5. Write a program that read a line of text and display it's length using function
 */
 
 
