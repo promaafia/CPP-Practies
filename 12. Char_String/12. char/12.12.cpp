@@ -18,11 +18,13 @@ int main()
 
     for (int i = 0; str[i]; ++i)
     {
+        //vowels
         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
                 str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
         {
             v_count++;
         }
+        //consonants
         else if((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
         {
             c_count++;
