@@ -1,12 +1,12 @@
 /*
-	12.13. Write a program that read a line of text and displays the frequency of every character
+	12.13. Write a program that read a line of text and displays the frequency of every small character
 */
 
 
 #include <iostream>
 using namespace std;
 
-void toLower(char text[]) {
+void toLower(char* text) {
 	for (int i = 0; text[i]; ++i) {
 		if (text[i] >= 'A' && text[i] <= 'Z') {
 			text[i] = text[i] + 32;

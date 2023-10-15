@@ -8,6 +8,9 @@ using namespace std;
 
 int main()
 {
-    int a[100];
+    char text[100];
+    cin.getline(text, sizeof(text));
+    cout << text;
+
     return 0;
 }
